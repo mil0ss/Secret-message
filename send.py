@@ -54,40 +54,4 @@ server.sendmail(msg['From'], msg['To'], msg.as_string())
     
 server.quit()
 
-#___________________________________
-
-'''From = msg['From']
-#From = bin(From)
-a = password
-b = ' '.join(format(ord(x), 'x') for x in a)
-
-#___________________________________
-
-msg = MIMEMultipart()
- 
-msg['From1'] = "milos.ivancic@escolesminguella.org"
-contra = "coronavirus"
-msg['To1'] = "milos.ivancic@escolesminguella.org"
-msg['Subject'] = "Nou accés al teu servidor"
-
-#From = msg['From']
-
-
-#____________________________________
-missatge = "L\'usuari " + From + " acada d'accedir al teu servidor" + "\n" + "Contrasenya: " + b
-
-
-#____________________________________
-msg.attach(MIMEText(missatge, 'plain'))
-
-server = smtplib.SMTP('smtp.gmail.com: 587')
- 
-server.starttls()
-
-server.login(msg['From1'], contra)
- 
-server.sendmail(msg['From1'], msg['To1'], msg.as_string())
- 
-server.quit()'''
-
 print('***Message sent***')
